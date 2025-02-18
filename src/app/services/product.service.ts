@@ -35,7 +35,7 @@ export interface ProductCreateDto {
   providedIn: 'root'
 })
 export class ProductService {
-  private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'https://node-rdbms-task.onrender.com';
   private productsUrl = `${this.baseUrl}/products`;
   private categoriesUrl = `${this.baseUrl}/categories`;
 
