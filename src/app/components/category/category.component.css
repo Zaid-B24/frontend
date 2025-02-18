@@ -1,0 +1,135 @@
+/* General container styling for form and categories list */
+.category-form, .categories-list {
+  margin: 20px;
+  padding: 24px;
+  background-color: #F9FAFB; /* Light background similar to product page */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1F2937; /* Darker text */
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.category-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category-form label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4B5563; /* Slightly lighter color */
+}
+
+.category-form input,
+.category-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #D1D5DB; /* Light border */
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #FFFFFF;
+}
+
+.category-form input:focus,
+.category-form textarea:focus {
+  border-color: #4F46E5; /* Blue border on focus */
+}
+
+.category-form button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  background-color: #4F46E5;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.category-form button:disabled {
+  background-color: #E5E7EB;
+  cursor: not-allowed;
+}
+
+.category-form button:hover:not(:disabled) {
+  background-color: #4338CA;
+}
+
+/* Categories list table styling */
+.categories-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.categories-list th,
+.categories-list td {
+  padding: 12px 20px;
+  text-align: left;
+}
+
+.categories-list th {
+  background-color: #F3F4F6; /* Light grey background for header */
+  color: #6B7280; /* Text color for header */
+  font-weight: 600;
+}
+
+.categories-list td {
+  font-size: 1rem;
+  color: #6B7280;
+}
+
+.categories-list .serial-column {
+  text-align: center;
+  width: 50px;
+}
+
+.categories-list .action-buttons button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  background-color: #E5E7EB;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.categories-list .action-buttons button:hover {
+  background-color: #D1D5DB;
+}
+
+/* No categories message */
+.no-categories {
+  text-align: center;
+  font-size: 1rem;
+  color: #6B7280;
+  margin-top: 20px;
+}
+
+/* Loading spinner styling */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.loading-spinner p {
+  font-size: 1rem;
+  color: #6B7280;
+  font-weight: 500;
+}

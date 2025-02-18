@@ -1,0 +1,286 @@
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9fafb;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styles */
+  button {
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Add Product Button */
+  button.bg-blue-500 {
+    background-color: #3b82f6;
+    color: #fff;
+  }
+  
+  button.bg-blue-500:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Form Styles */
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .shadow {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .p-6 {
+    padding: 1.5rem;
+  }
+  
+  .mb-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+  }
+  
+  /* Error and Success Alerts */
+  .bg-red-100 {
+    background-color: #fee2e2;
+  }
+  
+  .bg-green-100 {
+    background-color: #d1fadf;
+  }
+  
+  .border {
+    border-width: 1px;
+  }
+  
+  .text-red-500 {
+    color: #ef4444;
+  }
+  
+  .text-green-500 {
+    color: #10b981;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-gray-700 {
+    color: #374151;
+  }
+  
+  .text-gray-500 {
+    color: #6b7280;
+  }
+  
+  .text-gray-900 {
+    color: #111827;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  /* Form Fields */
+  input, textarea, select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    color: #4b5563;
+    background-color: #f9fafb;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.5);
+  }
+  
+  input[disabled], textarea[disabled], select[disabled] {
+    opacity: 0.7;
+  }
+  
+  input[type="text"]:invalid, select:invalid {
+    border-color: #ef4444;
+  }
+  
+  .text-red-500 {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    color: #ef4444;
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #f3f4f6;
+  }
+  
+  th, td {
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
+  
+  th {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  td {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f3f4f6;
+  }
+  
+  button.text-indigo-600 {
+    color: #3b82f6;
+  }
+  
+  button.text-indigo-600:hover {
+    color: #2563eb;
+  }
+  
+  button.text-red-600 {
+    color: #ef4444;
+  }
+  
+  button.text-red-600:hover {
+    color: #dc2626;
+  }
+  
+  /* Pagination */
+  .flex {
+    display: flex;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .sm\\:hidden {
+    display: none;
+  }
+  
+  .sm\\:flex-1 {
+    flex: 1;
+  }
+  
+  .sm\\:items-center {
+    align-items: center;
+  }
+  
+  .sm\\:justify-between {
+    justify-content: space-between;
+  }
+  
+  .inline-flex {
+    display: inline-flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+  }
+  
+  .font-medium {
+    font-weight: 500;
+  }
+  
+  .text-gray-500 {
+    color: #6b7280;
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .bg-indigo-600 {
+    background-color: #3b82f6;
+  }
+  
+  .text-white {
+    color: white;
+  }
+  
+  .bg-gray-300 {
+    background-color: #e5e7eb;
+  }
+  
+  .text-gray-800 {
+    color: #1f2937;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Loading Spinner */
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  

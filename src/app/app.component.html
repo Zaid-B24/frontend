@@ -1,0 +1,37 @@
+<nav>
+  <ul>
+    <li><button routerLink="/products" routerLinkActive="active">Products</button></li>
+    <li><button routerLink="/categories" routerLinkActive="active">Categories</button></li>
+  </ul>
+</nav>
+<!-- This is where routed components will be displayed -->
+<router-outlet></router-outlet>
+
+<style>
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    background: #333;
+    padding: 10px;
+  }
+  nav ul li {
+    display: inline;
+  }
+  nav ul li button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  nav ul li button:hover {
+    text-decoration: underline;
+  }
+  .active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+</style>
