@@ -63,7 +63,6 @@ import { ReactiveFormsModule } from '@angular/forms';
               };
           
               if (this.isEditing && this.editingCategoryId !== null) {
-                // Update Category (Include ID)
                 this.categoryService.updateCategory({ id: this.editingCategoryId, ...categoryData } as Category)
                   .subscribe(() => {
                     alert('Category updated successfully!');
@@ -71,7 +70,6 @@ import { ReactiveFormsModule } from '@angular/forms';
                     this.loadCategories();
                   });
               } else {
-                // Create New Category (DO NOT SEND ID)
                 this.categoryService.createCategory(categoryData as Category).subscribe(() => {
                   alert('Category created successfully!');
                   this.resetForm();
