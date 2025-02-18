@@ -55,24 +55,24 @@ import { ReactiveFormsModule } from '@angular/forms';
 
           onSubmit(): void {
             if (this.categoryForm.valid) {
-              const categoryData: Category = {
-                id: this.editingCategoryId || 0,  // 0 if it's a new category
+              const categoryData: Partial<Category> = {
                 name: this.categoryForm.value.categoryName,
                 description: this.categoryForm.value.description,
                 createdAt: new Date().toISOString(),
                 updatedAt: new Date().toISOString()
               };
-        
+          
               if (this.isEditing && this.editingCategoryId !== null) {
-                // Update Category
-                this.categoryService.updateCategory(categoryData).subscribe(() => {
-                  alert('Category updated successfully!');
-                  this.resetForm();
-                  this.loadCategories();
-                });
+                // Update Category (Include ID)
+                this.categoryService.updateCategory({ id: this.editingCategoryId, ...categoryData } as Category)
+                  .subscribe(() => {
+                    alert('Category updated successfully!');
+                    this.resetForm();
+                    this.loadCategories();
+                  });
               } else {
-                // Create New Category
-                this.categoryService.createCategory(categoryData).subscribe(() => {
+                // Create New Category (DO NOT SEND ID)
+                this.categoryService.createCategory(categoryData as Category).subscribe(() => {
                   alert('Category created successfully!');
                   this.resetForm();
                   this.loadCategories();

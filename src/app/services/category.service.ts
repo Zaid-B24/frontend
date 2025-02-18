@@ -23,6 +23,7 @@ export class CategoryService {
   }
 
   createCategory(category: Category): Observable<Category> {
+    const { id, ...categoryData } = category;
     return this.http.post<Category>(this.apiUrl, category);
   }
 
