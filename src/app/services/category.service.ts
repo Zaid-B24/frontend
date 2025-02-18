@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CategoryService {
   
-  private apiUrl = 'https://node-rdbms-task.onrender.com';
+  private apiUrl = 'https://node-rdbms-task.onrender.com/categories';
 
   constructor(private http: HttpClient) { }
 
