@@ -5,7 +5,6 @@ import { CategoryService } from '../../services/category.service';
 import { Category } from '../../models/category';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
 
 
 
